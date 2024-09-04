@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@wang1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/typed.umd.js"></script>
+    <style>
+        body {
+            font-family: "w04";
+            font-size: calc(10px + 0.33vw);
+            -webkit-font-smoothing: antialiased;
+            padding: 5vh 10vw;
+            color: #121314;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            font-weight: 500;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.6em;
+            font-weight: 300;
+            line-height: 1.4;
+            max-width: 28em;
+        }
+
+        a {
+            text-decoration: none;
+            white-space: nowrap;
+            color: #121314;
+            position: relative;
+        }
+
+        #tip {
+            position: absolute;
+            bottom: 10%;
+        }
+
+        a:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 66%;
+            left: -0.1em;
+            right: -0.1em;
+            bottom: 0;
+            transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+            background-color: rgba(79, 192, 141, 0.5);
+        }
+
+        a:hover:after {
+            top: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@Wang1</h1>
+    
+    <div id="content">
+        <p>Talk is <a>cheap</a>, Show me the code.</p>
+        <p><a>追风赶月莫停留，平芜尽处是春山。</a></p>
+    </div>
+    <span id="typed"></span>
+
+    <footer id="tip">
+        <a href="https://beian.miit.gov.cn/" target="_blank"><small>鲁ICP备2022034220号</small></a>
+    </footer>
+
+    <script>
+        new Typed('#typed', {
+            stringsElement: "#content",
+            typeSpeed: 50,
+            fadeOut: true,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
